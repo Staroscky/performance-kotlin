@@ -1,0 +1,5 @@
+instituicoes-config:
+  items:
+    - ispb: "00000000"
+      nome: "Exemplo Banco"
+      icone: "ids_exemplo"

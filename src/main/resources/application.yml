@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: performance
+  threads:
+    virtual:
+      enabled: true
+  cache:
+    type: cache2k
+  data:
+    redis:
+      host: ${integration.valkey.host:localhost}
+      port: ${integration.valkey.port:6379}
+  config:
+    import: classpath:config/instituicoes.yml
+  cloud:
+    compatibility-verifier:
+      enabled: false
+    openfeign:
+      client:
+        config:
+          default:
+            connectTimeout: 1500
+            readTimeout: 1500
+          instituicoes-financeiras:
+            url: ${integration.instituicoes-financeiras.url}
+            defaultRequestHeaders:
+              x-api-key: ${integration.instituicoes-financeiras.api-key}
+              x-app-id: ${sts.app-id}
+          inteligencia:
+            url: ${integration.inteligencia.url}
+          contatos-core:
+            url: ${integration.contatos-core.url}
+
+sts:
+  url: ${integration.sts.url:http://localhost:9000/v1/oauth}
+  client:
+    id: ${integration.sts.client-id}
+    secret: ${integration.sts.client-secret}
+  app-id: d230d5c5-a270-4a9c-a93e-ac2da7ff176f

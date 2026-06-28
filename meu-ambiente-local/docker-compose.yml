@@ -1,0 +1,12 @@
+services:
+  valkey:
+    image: valkey/valkey:8
+    ports:
+      - "6379:6379"
+
+  wiremock:
+    image: wiremock/wiremock:3.10.0
+    ports:
+      - "9001:8080"
+    volumes:
+      - ./mocks:/home/wiremock

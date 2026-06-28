@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPattern": "/v1/oauth.*"
+  },
+  "response": {
+    "status": 200,
+    "headers": { "Content-Type": "application/json" },
+    "fixedDelayMilliseconds": 80,
+    "jsonBody": {
+      "access_token": "mock-access-token",
+      "expires_in": 3600
+    }
+  }
+}

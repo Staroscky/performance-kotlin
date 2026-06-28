@@ -1,0 +1,42 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/v1/contatos-core.*"
+  },
+  "response": {
+    "status": 200,
+    "headers": { "Content-Type": "application/json" },
+    "fixedDelayMilliseconds": 80,
+    "jsonBody": {
+      "data": [
+        {
+          "idDestino": "c1d2e3f4-0000-0000-0000-000000000001",
+          "idContato": "d2e3f4a5-0000-0000-0000-000000000002",
+          "nome": "João Silva",
+          "apelido": "Joãozinho",
+          "dadosDestino": {
+            "chave": "47997746981",
+            "ag": null,
+            "conta": null,
+            "dac": null,
+            "tipoConta": null
+          }
+        },
+        {
+          "idDestino": "e3f4a5b6-0000-0000-0000-000000000003",
+          "idContato": "f4a5b6c7-0000-0000-0000-000000000004",
+          "nome": "Maria Souza",
+          "apelido": null,
+          "dadosDestino": {
+            "chave": null,
+            "ag": "0500",
+            "conta": "12345",
+            "dac": "1",
+            "tipoConta": "C"
+          }
+        }
+      ],
+      "x-next-cursor": null
+    }
+  }
+}

@@ -1,0 +1,17 @@
+sts:
+  url: http://localhost:9001/v1/oauth
+  client:
+    id: b7d1ab21-5f8c-42a0-b07c-5150fd59f1cb
+    secret: 9773ac44-072b-41a7-b6a8-ccb051047ac0
+
+integration:
+  valkey:
+    host: localhost
+    port: 6379
+  instituicoes-financeiras:
+    url: http://localhost:9001/v1
+    api-key: 1234567890
+  inteligencia:
+    url: http://localhost:9001/v1
+  contatos-core:
+    url: http://localhost:9001/v1

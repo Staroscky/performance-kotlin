@@ -1,0 +1,27 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/v1/inteligencia.*"
+  },
+  "response": {
+    "status": 200,
+    "headers": { "Content-Type": "application/json" },
+    "fixedDelayMilliseconds": 80,
+    "jsonBody": {
+      "data": [
+        {
+          "idSugestao": "a1b2c3d4-0000-0000-0000-000000000001",
+          "chave": "fulano@email.com",
+          "apelido": "Fulano"
+        },
+        {
+          "idSugestao": "a1b2c3d4-0000-0000-0000-000000000002",
+          "ag": "0500",
+          "cc": "12345",
+          "dac": "1",
+          "tipoConta": "C"
+        }
+      ]
+    }
+  }
+}

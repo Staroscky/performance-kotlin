@@ -1,0 +1,16 @@
+sts:
+  client:
+    id: changeme
+    secret: changeme
+
+integration:
+  valkey:
+    host: changeme
+    port: 6379
+  instituicoes-financeiras:
+    url: changeme
+    api-key: changeme
+  inteligencia:
+    url: changeme
+  contatos-core:
+    url: changeme
