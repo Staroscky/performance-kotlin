@@ -21,6 +21,9 @@ spring:
           default:
             connectTimeout: 1500
             readTimeout: 1500
+            loggerLevel: FULL
+          sts:
+            loggerLevel: NONE
           instituicoes-financeiras:
             url: ${integration.instituicoes-financeiras.url}
             defaultRequestHeaders:
@@ -37,3 +40,11 @@ sts:
     id: ${integration.sts.client-id}
     secret: ${integration.sts.client-secret}
   app-id: d230d5c5-a270-4a9c-a93e-ac2da7ff176f
+
+logbook:
+  filter:
+    enabled: true
+  format:
+    style: http
+  include:
+    - /**

@@ -3,6 +3,11 @@ sts:
     id: changeme
     secret: changeme
 
+logging:
+  structured:
+    format:
+      console: ecs
+
 integration:
   valkey:
     host: changeme

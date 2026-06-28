@@ -4,6 +4,12 @@ sts:
     id: b7d1ab21-5f8c-42a0-b07c-5150fd59f1cb
     secret: 9773ac44-072b-41a7-b6a8-ccb051047ac0
 
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd'T'HH:mm:ss.SSSZ} [%thread] %-5level [%X{correlationId:-}] %logger{36} - %msg%n"
+  level:
+    org.zalando.logbook: TRACE
+
 integration:
   valkey:
     host: localhost
